@@ -21,4 +21,5 @@ test('validate title', async ({ page }) => {
   await page.getByRole('link', { name: 'Announcement: Agood news for' }).click();
   await expect(page).toHaveTitle('Announcement: Agood news for Full-stack web developer (React.js) - YouTube');
   await page.goBack();
-})
+});
+
